@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 const { MongoClient } = require('mongodb');
 
-const DBURI = process.env.DBURI;
-//"mongodb://127.0.0.1:27017/myapp"
+const DBURI = "mongodb://127.0.0.1:27017/myapp"
 mongoose
     .connect(DBURI, {
         useNewUrlParser: true,
