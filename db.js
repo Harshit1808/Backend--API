@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { MongoClient } = require('mongodb');
 
-const DBURI = "mongodb://127.0.0.1:27017/myapp"
+const DBURI = "mongodb://harsh123:harsh123@cluster0-shard-00-00.qxqxw.mongodb.net:27017,cluster0-shard-00-01.qxqxw.mongodb.net:27017,cluster0-shard-00-02.qxqxw.mongodb.net:27017/?ssl=true&replicaSet=atlas-abfz96-shard-0&authSource=admin&retryWrites=true&w=majority"
 mongoose
     .connect(DBURI, {
         useNewUrlParser: true,
