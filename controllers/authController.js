@@ -1,6 +1,6 @@
 const express = require('express');
 const userServices = require('../services/authServices');
-const { verifyToken } = require("../auth/VerifyToken");
+const { verifyToken } = require("../auth/verifyToken");
 const router = express.Router();
 const validator = require("./../validators/userValidator");
 router.use(validator);
